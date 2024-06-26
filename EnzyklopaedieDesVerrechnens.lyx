@@ -1,0 +1,1765 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass scrreprt
+\begin_preamble
+%\KOMAOptions{headings=small}
+%\KOMAOptions{appendixprefix=false}
+%\KOMAOptions{numbers=noenddot}
+%\KOMAOptions{listof=totoc}
+%\KOMAOptions{bibliography=totoc}
+%\usepackage[table]{xcolor}
+\usepackage{xcolor}
+\usepackage[T1]{fontenc}
+\usepackage{type1ec}
+%\usepackage{cmsuper}
+
+\usepackage{booktabs} %fr horizontale dicke striche in tabellen
+\usepackage{tikz}
+\usepackage{colortbl} % für \cellcolor in tabellen
+%\@ifundefined{definecolor}
+ %{\usepackage{color}}{}
+
+% Fuer Listings, Quellcode, Progamme
+\usepackage{listings}
+\lstset{numbers=left, numberstyle=\tiny, numbersep=5pt, basicstyle=\scriptsize\ttfamily, frame=single}
+\lstset{language=SQL}
+%\usepackage{bbding} % fuer hand right
+
+\usepackage{longtable}
+%\usepackage{sitable}
+\usepackage{dcolumn}
+\usepackage{textgreek}
+\usepackage{lscape}
+
+ %Fr das Stichwortverzeichnis  
+%\usepackage{dcolumn} %fr die ausrichtung am komma in tabellen
+\usepackage{float} %erforderlich um tabellen wie figuren numerieren zu lassen
+\usepackage{fixmath}
+
+
+\usepackage{graphics}
+
+
+
+\usepackage{scrlayer-scrpage}
+%\usepackage{subfigure} %fr untergrafiken
+\usepackage{upgreek}
+
+%\usepackage{mathrsfs}
+%\usepackage{mathpazo}
+\usepackage[notextcomp]{stix}
+
+\restylefloat{table} %erforderlich um tabellen wie figuren numerieren zu lassen
+\mathcode`,="013B %Komma ist Dezimaltrennzeichen in mat. Formeln
+\mathcode`.="613A %Komma ist Dezimaltrennzeichen in mat. Formeln
+%\setlength{\textheight}{23.8cm}
+
+%\linespread{1}
+  %aufname der subsubsections ins inhaltsverz.
+ %numerierung der subsubsections
+%\renewcommand*{\chapterpagestyle}{scrheadings} %setzt eine Kopfzeile auf Kapitelanfangsseiten
+\renewcommand*{\indexpagestyle}{scrheadings} %setzt eine Kopfzeile auf Indexseiten
+\setcounter{topnumber}{4}
+\setcounter{bottomnumber}{4}
+\setcounter{totalnumber}{4}
+%\renewcommand{\textfraction}{0.01}
+%\renewcommand{\topfraction}{0.99}
+%\renewcommand{\bottomfraction}{0.99}
+%\renewcommand{\floatpagefraction}{0.0}
+\renewcommand\floatpagefraction{.98} %anteil an gleitobjekten pro Gleitobjekt-Seite, bevor eine neue Seite angelegt wird
+\renewcommand\topfraction{1} %anteil pro seite an Gleitobjekten am oberen rand
+\renewcommand\bottomfraction{1} %anteil pro seite an Gleitobjekten am unteren rand
+\renewcommand\textfraction{.0}   %minimalanteil Text pro Seite
+\setcounter{totalnumber}{3}
+\setcounter{topnumber}{3}
+\setcounter{bottomnumber}{3}
+
+\ohead{\pagemark}
+\ihead{}
+\chead{}
+\cfoot{}
+\ifoot{}
+\ofoot{}
+%\automark[subsection]{section}
+\setheadsepline{1pt}
+\makeindex     % Fr das Sachregister/Index/Register
+\pagenumbering{roman}
+
+
+\hyphenation{
+Spu-len-be-schleu-ni-gers 
+Stör-quel-len
+nach-träg-liche
+}
+
+\usepackage[type={CC},modifier={by-sa},version={4.0},]{doclicense}
+
+
+% Für keinen Platz zwischen Funktion und Klammer
+\let\originalleft\left
+\let\originalright\right
+\renewcommand{\left}{\mathopen{}\mathclose\bgroup\originalleft}
+\renewcommand{\right}{\aftergroup\egroup\originalright}
+\renewcommand{\pi}{\uppi}
+\newcommand{\pfl}[1]{\begin{tikzpicture}\useasboundingbox (0,0) rectangle (0.01,0.01);\draw[->, line width=1pt] (0,0) .. controls (0.25,-0.25) and (0.25,-0.75) .. (0,-1); \draw (0.26,-0.5) node[anchor=west] {\ensuremath{#1}}; \end{tikzpicture}}
+\end_preamble
+\options BCOR0mm,table,pointlessnumbers, headings=small, appendixprefix=false, numbers=noenddot, listof=totoc, bibliography=totoc
+\use_default_options false
+\maintain_unincluded_children false
+\language ngerman
+\language_package default
+\inputencoding iso8859-1
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format pdf2
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement tbh
+\paperfontsize 12
+\spacing single
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 4
+\pdf_breaklinks false
+\pdf_pdfborder false
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle true
+\papersize a4paper
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 2
+\use_package esint 0
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\use_minted 0
+\branch modellbildung
+\selected 1
+\filename_suffix 0
+\color #faf0e6
+\end_branch
+\branch vorwort
+\selected 0
+\filename_suffix 0
+\color #faf0e6
+\end_branch
+\branch dank
+\selected 0
+\filename_suffix 0
+\color #faf0e6
+\end_branch
+\branch einleitung
+\selected 1
+\filename_suffix 0
+\color #faf0e6
+\end_branch
+\branch taylortest
+\selected 1
+\filename_suffix 0
+\color #faf0e6
+\end_branch
+\branch beschleunigertypen
+\selected 1
+\filename_suffix 0
+\color #faf0e6
+\end_branch
+\branch ausbreitungsgeschwindigkeit_rechnung
+\selected 0
+\filename_suffix 0
+\color #faf0e6
+\end_branch
+\branch konstante_beschleunigung_am_ende
+\selected 0
+\filename_suffix 0
+\color #faf0e6
+\end_branch
+\branch experimentelleraufbau
+\selected 1
+\filename_suffix 0
+\color #faf0e6
+\end_branch
+\branch regelungskonzept
+\selected 1
+\filename_suffix 0
+\color #faf0e6
+\end_branch
+\branch ergebnis
+\selected 1
+\filename_suffix 0
+\color #faf0e6
+\end_branch
+\branch zusammenfassung
+\selected 1
+\filename_suffix 0
+\color #faf0e6
+\end_branch
+\branch dina5
+\selected 0
+\filename_suffix 0
+\color #faf0e6
+\end_branch
+\branch dina4
+\selected 1
+\filename_suffix 0
+\color #faf0e6
+\end_branch
+\index Stichwortverzeichnis
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Enzyklopädie des Verrechnens
+\end_layout
+
+\begin_layout Subtitle
+
+\size larger
+\begin_inset VSpace 4mm
+\end_inset
+
+
+\size default
+Auflistung und Klassifizierung verschiedener Rechenfehler in ingenieurwissenscha
+ftlichen Rechnungen
+\end_layout
+
+\begin_layout Author
+Prof.
+ Dr.-Ing.
+ Thorbjörn Siaenen
+\end_layout
+
+\begin_layout Date
+Version v.
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+today 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Publishers
+
+\size small
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+doclicenseThis  
+\end_layout
+
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\size small
+Lizenz: Die LyX-Quelldatei und das resultierende Dokument unterliegt der
+ Lizenz 
+\begin_inset Quotes eld
+\end_inset
+
+NAMENSNENNUNG - WEITERGABE UNTER GLEICHEN BEDINGUNGEN 4.0 INTERNATIONAL
+\begin_inset Quotes erd
+\end_inset
+
+, CC-BY-SA 4.0, Verfügbar unter 
+\family typewriter
+https://creativecommons.org/licenses/by-sa/4.0/
+\family default
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+Einleitung
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\umf}[1]{\pfl{#1}}
+{\biggr|#1}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Dies ist eine Auflistung von Fehlern aus dem Bereich der Ingenieurmathematik.
+ Die Schwere von Fehlern ist mit 
+\begin_inset Formula $\frownie$
+\end_inset
+
+ (leichter Flüchtigkeitsfehler), 
+\begin_inset Formula $\frownie\frownie$
+\end_inset
+
+ (mittlerer Fehler) und 
+\begin_inset Formula $\frownie\frownie\frownie$
+\end_inset
+
+ (schwerwiegender Fehler) gekennzeichnet.
+ 
+\end_layout
+
+\begin_layout Itemize
+Leichte Fehler sind Flüchtigkeitsfehler (Addition einmalig falsch, Übertragungsf
+ehler)
+\end_layout
+
+\begin_layout Itemize
+Mittlere Fehler liegen vor, wenn logische Zusammenhänge verfälscht werden.
+ (Schließende Klammer vergessen, Bruchstrich zu kurz, Wurzel nicht über
+ dem gesamten Radikanten), oder wenn logische Zusammenhänge nicht vollständig
+ erfüllt sind.
+ 
+\end_layout
+
+\begin_layout Itemize
+Schwerwiegende Fehler liegen vor, wenn Rechenschritte durchgeführt wurden,
+ die geltenden Regeln wiedersprechen (Kürzen einzelner Summanden aus Summen).
+\end_layout
+
+\begin_layout Standard
+Die Klassifizierung ist allerdings nicht immer eindeutig möglich.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pagenumbering{arabic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+Fehler
+\end_layout
+
+\begin_layout Section
+Falsches Zeichen, Übertragungsfehler 
+\begin_inset Formula $\frownie$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Es ist ein Fehler, wenn ein Term fehlerhaft abgeschrieben wird.
+ 
+\end_layout
+
+\begin_layout Standard
+Falsch (im Zähler der linken Seite steht ein Multiplikationszeichen, statt
+ einem Pluszeichen):
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing single
+\begin_inset Formula 
+\begin{align*}
+5\,s\,L+5\,R & =\mathscr{L}\left(i\left(t\right)\right)\cdot\left(L\,s^{2}+R\,s+\frac{1}{C}\right)\\
+\Rightarrow\frac{5\,s\,L\cdot5\,R}{L\,s^{2}+R\,s+\frac{1}{C}} & =\mathscr{L}\left(i\left(t\right)\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Richtig:
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing single
+\begin_inset Formula 
+\begin{align*}
+5\,s\,L+5\,R & =\mathscr{L}\left(i\left(t\right)\right)\cdot\left(L\,s^{2}+R\,s+\frac{1}{C}\right)\\
+\Rightarrow\frac{5\,s\,L+5\,R}{L\,s^{2}+R\,s+\frac{1}{C}} & =\mathscr{L}\left(i\left(t\right)\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Gleicheitszeichen oder Folgepfeile fehlen 
+\begin_inset Formula $\frownie\frownie$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Bei Umformungen, bei denen sich der Wert des Ausdrucks nicht ändert, muss
+ ein Gleichheitszeichen gesetzt werden.
+ Wenn bei Termumformungen sich der Wert einer Gleichung ändert, muss ein
+ 
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+ gesetzt werden.
+\end_layout
+
+\begin_layout Standard
+Falsch:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\overline{y\left(t\right)}= & \frac{1}{T}\,\int_{t=0}^{T}y\left(t\right)\,\mathrm{d}t\qquad\biggr|y\left(t\right)=2\,t\\
+ & \frac{1}{T}\,\int_{t=0}^{T}2\,t\,\mathrm{d}t\\
+ & \frac{1}{T}\,2\,\int_{t=0}^{T}t\,\mathrm{d}t
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Richtig:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\overline{y\left(t\right)} & =\frac{1}{T}\,\int_{t=0}^{T}y\left(t\right)\,\mathrm{d}t\qquad\biggr|y\left(t\right)=2\,t\\
+ & =\frac{1}{T}\,\int_{t=0}^{T}2\,t\,\mathrm{d}t\\
+ & =\frac{1}{T}\,2\,\int_{t=0}^{T}t\,\mathrm{d}t
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Falsch:
+\begin_inset Formula 
+\begin{align*}
+\sqrt{x} & =3\qquad\biggr|\left(\dots\right)^{2}\\
+x & =9
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Richtig:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\sqrt{x} & =3\qquad\biggr|\left(\dots\right)^{2}\\
+\Rightarrow x & =9
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Gleicheitszeichen oder Folgepfeile falsch verwendet 
+\begin_inset Formula $\frownie\frownie$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Falsch ist es, wenn aus einem Ausdruck ein anderer folgt und dies mit einem
+ Gleichheitszeichen gekennzeichnet wird.
+\end_layout
+
+\begin_layout Paragraph
+Beispiel
+\end_layout
+
+\begin_layout Standard
+Falsch:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\sqrt{x}=3=x=9
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Richtig:
+\begin_inset Formula 
+\[
+\sqrt{x}=3\Rightarrow x=9
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Weiteres Beispiel:
+\end_layout
+
+\begin_layout Standard
+Gegeben ist die Funktion 
+\begin_inset Formula $y\left(x\right)=\mathrm{e}^{2\,x}$
+\end_inset
+
+.
+ Leiten Sie diese Funktion einmal ab und werten sie diese bei 
+\begin_inset Formula $x_{0}=\frac{1}{2}$
+\end_inset
+
+ aus.
+\end_layout
+
+\begin_layout Standard
+Falsch:
+\begin_inset Formula 
+\[
+y^{\prime}\left(x\right)=2\,\mathrm{e}^{2\,x}=y^{\prime}\left(\frac{1}{2}\right)=2\,\mathrm{e}^{1}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Richtig:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+y^{\prime}\left(x\right)=2\,\mathrm{e}^{2\,x}\qquad\qquad y^{\prime}\left(\frac{1}{2}\right)=2\,\mathrm{e}^{1}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+y^{\prime}\left(x\right)=2\,\mathrm{e}^{2\,x}\Rightarrow y^{\prime}\left(\frac{1}{2}\right)=2\,\mathrm{e}^{1}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Weiteres Beispiel:
+\end_layout
+
+\begin_layout Standard
+Es ist folgender Ausdruck gegeben, bei dem durch einen Koeffizientenvergleich
+ ein Gleichungssystem abgeleitet wird:
+\begin_inset Formula 
+\[
+-6\,a_{2}\,t^{2}+\left(-2\,a_{2}-6\,a_{1}\right)\,t+2\,a_{2}+a_{1}-6\,a_{0}=4\,t^{2}+0\,t-3
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Rightarrow2\,a_{2}+a_{1}-6\,a_{0}=-3
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\Rightarrow-6\,a_{2}=4
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\Rightarrow-2\,a_{2}-6\,a_{1}=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Dies ist falsch, weil aus 
+\begin_inset Formula $2\,a_{2}+a_{1}-6\,a_{0}=-3$
+\end_inset
+
+ nicht folgt, dass 
+\begin_inset Formula $-6\,a_{2}=4$
+\end_inset
+
+ ist.
+ Weiterhin folgt nicht aus 
+\begin_inset Formula $-6\,a_{2}=4$
+\end_inset
+
+ der Ausdruck 
+\begin_inset Formula $-2\,a_{2}-6\,a_{1}=0$
+\end_inset
+
+.
+ Richtig wäre:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+-6\,a_{2}\,t^{2}+\left(-2\,a_{2}-6\,a_{1}\right)\,t+2\,a_{2}+a_{1}-6\,a_{0}=4\,t^{2}+0\,t-3
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Rightarrow2\,a_{2}+a_{1}-6\,a_{0}=-3
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+und
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+-6\,a_{2}=4
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+und
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+-2\,a_{2}-6\,a_{1}=0\,.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Noch besser übersichtlicher wäre es, ein lineares Gleichungssystem direkt
+ abzuleiten:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+-6\,a_{2}\,t^{2}+\left(-2\,a_{2}-6\,a_{1}\right)\,t+2\,a_{2}+a_{1}-6\,a_{0}=4\,t^{2}+0\,t-3
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Rightarrow\left(\begin{array}{ccc}
+-6 & 1 & 2\\
+0 & 0 & -6\\
+0 & -6 & -2
+\end{array}\right)\,\left(\begin{array}{c}
+a_{0}\\
+a_{1}\\
+a_{2}
+\end{array}\right)=\left(\begin{array}{c}
+-3\\
+4\\
+0
+\end{array}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Weiteres Beispiel
+\end_layout
+
+\begin_layout Standard
+In diesem Beispiel werden Gleichheitszeichen verwendet um eine Nebenrechnung
+ zu kennzeichnen.
+ Falsch ist:
+\begin_inset Formula 
+\[
+\frac{\left(4\cdot1\right)+\left(-2\cdot\left(-3\right)\right)}{\left(1\cdot1\right)+\left(-3\cdot\left(-3\right)\right)}\begin{array}{c}
+=4+6\\
+=1+9
+\end{array}=\frac{10}{10}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Richtig ist:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+ & \frac{\left(4\cdot1\right)+\left(-2\cdot\left(-3\right)\right)}{\left(1\cdot1\right)+\left(-3\cdot\left(-3\right)\right)}\qquad\biggl|\begin{array}{c}
+4+6=10\\
+1+9=10
+\end{array}\\
+ & =\frac{10}{10}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Integrationsvariable nicht nennen 
+\begin_inset Formula $\frownie$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Die Angabe der Integrationsvariable darf nicht fehlen.
+ Falsch:
+\begin_inset Formula 
+\[
+a_{k}=\frac{4}{T}\,\int_{0}^{T/2}2\,t\,\cos\left(\frac{2\,k\,\pi}{T}\,t\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Richtig:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+a_{k}=\frac{4}{T}\,\int_{0}^{T/2}2\,t\,\cos\left(\frac{2\,k\,\pi}{T}\,t\right)\,\mathrm{d}t
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+oder
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+a_{k}=\frac{4}{T}\,\int_{t=0}^{T/2}2\,t\,\cos\left(\frac{2\,k\,\pi}{T}\,t\right)\,\mathrm{d}t
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Integrationskonstante bei unbestimmten Integralen nicht angeben 
+\begin_inset Formula $\frownie$
+\end_inset
+
+
+\begin_inset Formula $\frownie$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Bei unbestimmten Integralen ist die Integrationskonstante mit anzugeben.
+ Falsch:
+\begin_inset Formula 
+\[
+\int x^{2}\,\mathrm{d}x=\frac{1}{3}\,x^{3}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Richtig:
+\begin_inset Formula 
+\[
+\int x^{2}\,\mathrm{d}x=\frac{1}{3}\,x^{3}+C
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Unklare Grenzen einer Wurzel 
+\begin_inset Formula $\frownie\frownie$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Der Beginn und das Ende einer Wurzel muss eindeutig erkennbar sein.
+ 
+\end_layout
+
+\begin_layout Standard
+Falsch:
+\begin_inset Formula 
+\begin{align*}
+s_{\mathrm{a}} & =\sqrt{\frac{1}{n-1}\,\sum_{k=1}^{n}\left(x_{k}-\overline{x}\right)^{2}}\\
+ & =\sqrt{\frac{1}{4-1}\,\bigl(3,4-3,}325\bigr)^{2}+\bigl(3,6-3,325\bigr)^{2}+\bigl(3,2-3,325\bigr)^{2}+\bigl(3,1-3,325\bigr)^{2}\\
+ & =0,221736
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Richtig:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+s_{\mathrm{a}} & =\sqrt{\frac{1}{n-1}\,\sum_{k=1}^{n}\left(x_{k}-\overline{x}\right)^{2}}\\
+ & =\sqrt{\frac{1}{4-1}\,\bigl(3,4-3,325\bigr)^{2}+\bigl(3,6-3,325\bigr)^{2}+\bigl(3,2-3,325\bigr)^{2}+\bigl(3,1-3,325\bigr)^{2}}\\
+ & =0,221736
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Nicht ausgeglichene Klammerpaare 
+\begin_inset Formula $\frownie\frownie$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Klammern müssen immer paarweise gesetzt werden.
+ Zu einer öffnenden Klammer gehört immer eine schließende Klammer.
+\end_layout
+
+\begin_layout Standard
+Falsch:
+\begin_inset Formula 
+\[
+\left(\left(x-2\right)^{2}+3^{2}\right)=\biggl(x^{2}-4\,x+4+9
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Richtig:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left(\left(x-2\right)^{2}+3^{2}\right)=\left(x^{2}-4\,x+4+9\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ausnahme: Intervalle.
+ 
+\begin_inset Formula $L=(-4;\,7]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Kennzeichnung von Ableitungen 
+\begin_inset Formula $\frownie\frownie$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Die 
+\begin_inset Formula $n$
+\end_inset
+
+-te Ableitung kann dadurch gekennzeichnet werden, dass im Exponenten nach
+ dem Funktionsnamen eine natürliche Zahl in Klammern steht.
+ 
+\end_layout
+
+\begin_layout Standard
+Falsche Kennzeichnung der zweiten Ableitung der Funktion 
+\begin_inset Formula $y\left(t\right)$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+y^{2}\left(t\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Richtig:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+y^{\left(2\right)}\left(t\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Richtig wäre in diesem Fall auch:
+\begin_inset Formula 
+\[
+y^{\prime\prime}\left(t\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Kennzeichnung von Ableitungen 
+\begin_inset Formula $\frownie\frownie$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Die erste Ableitung kann dadurch gekennzeichnet werden, indem ein 
+\begin_inset Formula $\frac{\mathrm{d}}{\mathrm{d}t}$
+\end_inset
+
+ (oder nach einer anderen Variablen abgeleitet) vorangestellt wird.
+\end_layout
+
+\begin_layout Standard
+Richtig:
+\begin_inset Formula 
+\[
+y^{\prime}\left(t\right)=\frac{\mathrm{d}}{\mathrm{d}t}y\left(t\right)
+\]
+
+\end_inset
+
+ Falsch:
+\begin_inset Formula 
+\[
+y^{\prime}\left(t\right)=y\left(t\right)\,\frac{\mathrm{d}}{\mathrm{d}t}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+Rechenfehler
+\end_layout
+
+\begin_layout Section
+Unmögliches Ausklammern 
+\begin_inset Formula $\frownie\frownie\frownie$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Falsch:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+a_{k} & =\frac{4}{6}\,\int_{0}^{2}2\cdot\cos\left(\frac{k\,2\,\pi}{6}\,t\right)\,\mathrm{d}t\\
+ & =\frac{4}{6}\,2\cdot\int_{0}^{2}\cos\left(\frac{k\,2\,\pi}{6}\,t\right)\,\mathrm{d}t\\
+ & =\frac{4}{6}\,2\cdot\frac{2\,k}{6}\int_{0}^{2}\cos\left(\pi\,t\right)\,\mathrm{d}t
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Richtig (
+\begin_inset Formula $\frac{k\,2}{6}$
+\end_inset
+
+ kann nicht aus dem Argument der Kosinusfunktion vor die Funktion geschrieben
+ werden) :
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+a_{k} & =\frac{4}{6}\,\int_{0}^{2}2\cdot\cos\left(\frac{k\,2\,\pi}{6}\,t\right)\,\mathrm{d}t\\
+ & =\frac{8}{6}\cdot\int_{0}^{2}\cos\left(\frac{k\,2\,\pi}{6}\,t\right)\,\mathrm{d}t
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+\paragraph_spacing single
+Falsches Kürzen 
+\begin_inset Formula $\frownie\frownie\frownie$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Falsch:
+\begin_inset Formula 
+\[
+\frac{\cancel{\frac{5}{4}}\,s+40}{\cancel{\frac{1}{4}}\,s^{2}+8\,s+60}=\frac{5\,s+40}{s^{2}+8\,s+60}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Richtig:
+\begin_inset Formula 
+\begin{align*}
+G\left(s\right)= & \frac{\frac{5}{4}\,s+40}{\frac{1}{4}\,s^{2}+8\,s+60}\qquad\biggr|\frac{\cdot4}{\cdot4}\\
+= & \frac{5\,s+160}{s^{2}+32\,s+240}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Falsch:
+\begin_inset Formula 
+\[
+\frac{4}{\pi^{2}}=\frac{\cancelto{2}{4}}{\pi^{\cancel{2}}}=\frac{2}{\pi}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Richtig: In diesem Ausdruck kann nichts gekürzt werden.
+ Möglich ist allerdings folgende Umformung:
+\begin_inset Formula 
+\begin{align*}
+\frac{4}{\pi^{2}} & =\frac{2\cdot2}{\pi\cdot\pi}=\left(\frac{2}{\pi}\right)^{2}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+\paragraph_spacing single
+Falsches Ausklammern 
+\begin_inset Formula $\frownie\frownie\frownie$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Falsch (Klammern vergessen):
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{1}{4}\,s^{2}+8\,s+60=\frac{1}{4}\,s^{2}+32\,s+240
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Richtig:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{1}{4}\,s^{2}+8\,s+60=\frac{1}{4}\,\left(s^{2}+32\,s+240\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Falsches Ausklammern in Bezug auf das Summenzeichen 
+\begin_inset Formula $\frownie\frownie\frownie$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Falsch:
+\begin_inset Formula 
+\begin{align*}
+ & \frac{\sum_{k=0}^{20}\frac{k}{2}}{\sum_{k=2}^{2}\left(\frac{1}{2}\right)^{k}}\qquad\Biggl|\begin{array}{c}
+\cdot2\\
+\\
+\end{array}\\
+ & =\frac{2\,\sum_{k=0}^{20}k}{\sum_{k=2}^{2}\left(\frac{1}{2}\right)^{k}}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Richtig:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+ & \frac{\sum_{k=0}^{20}\frac{k}{2}}{\sum_{k=2}^{2}\left(\frac{1}{2}\right)^{k}}\\
+ & =\frac{\frac{1}{2}\,\sum_{k=0}^{20}k}{\sum_{k=2}^{2}\left(\frac{1}{2}\right)^{k}}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Summenzeichen: die Laufvariable ausklammern 
+\begin_inset Formula $\frownie\frownie\frownie$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Die Laufvariable des Summenzeichens existiert nur dort und kann nicht ausgeklamm
+ert werden.
+ Falsch ist (Hinweis: es gilt 
+\begin_inset Formula $\sum_{k=0}^{n}k=\frac{n^{2}+n}{2}$
+\end_inset
+
+ ) 
+\begin_inset Formula 
+\[
+\sum_{k=0}^{20}\,\frac{k}{2}=\frac{k}{2}\,\frac{20^{2}+20}{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Richtig ist:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\sum_{k=0}^{20}\,\frac{k}{2}=\frac{1}{2}\,\sum_{k=0}^{20}\,k=\frac{1}{2}\cdot\frac{20^{2}+20}{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Falsches Ausmultiplizieren 
+\begin_inset Formula $\frownie\frownie\frownie$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Falsch: Das Vorzeichen des einen Faktors ignorieren
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+2\,a_{2}-9\,\left(a_{2}\,t^{2}+a_{1}\,t+a_{2}\right) & =4\,t^{2}-3\\
+\Rightarrow2\,a_{2}-9\,a_{2}\,t^{2}+9\,a_{1}\,t+9\,a_{2} & =4\,t^{2}-3
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Richtig:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+2\,a_{2}-9\,\left(a_{2}\,t^{2}+a_{1}\,t+a_{2}\right) & =4\,t^{2}-3\\
+\Rightarrow2\,a_{2}-9\,a_{2}\,t^{2}-9\,a_{1}\,t-9\,a_{2} & =4\,t^{2}-3
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Determinantenstriche vergessen 
+\begin_inset Formula $\frownie\frownie$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Determinanten verändern ihren Wert nicht, wenn Zeilen mit Konstanten multiplizie
+rt und zu anderen Zeilen addiert werden.
+ Dasselbe gilt für Spalten.
+ Dies wird 
+\begin_inset Quotes eld
+\end_inset
+
+Vorbehandlung
+\begin_inset Quotes erd
+\end_inset
+
+ von Determinanten genannt.
+ Bei dieser Vorbehandlung dürfen die Determinantenstriche nicht entfallen.
+\end_layout
+
+\begin_layout Standard
+Falsch:
+\begin_inset Formula 
+\begin{align*}
+\left|\boldsymbol{M}\right| & =\left|\left(\begin{array}{cc}
+1 & 2\\
+3 & 4
+\end{array}\right)\right|\\
+ & =\left(\begin{array}{cc}
+1 & 2\\
+3 & 4
+\end{array}\right)\qquad\begin{array}{c}
+\cdot\left(-3\right)\\
+\leftarrow+
+\end{array}\\
+ & =\left(\begin{array}{cc}
+\overbrace{1} & 2\\
+\underbrace{0}_{\text{Entw.}} & -2
+\end{array}\right)\\
+ & =1\cdot\left|\left(-2\right)\right|\\
+ & =-2
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Richtig:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\left|\boldsymbol{M}\right| & =\left|\left(\begin{array}{cc}
+1 & 2\\
+3 & 4
+\end{array}\right)\right|\\
+ & =\left|\left(\begin{array}{cc}
+1 & 2\\
+3 & 4
+\end{array}\right)\right|\qquad\begin{array}{c}
+\cdot\left(-3\right)\\
+\leftarrow+
+\end{array}\\
+ & =\left|\left(\begin{array}{cc}
+\overbrace{1} & 2\\
+\underbrace{0}_{\text{Entw.}} & -2
+\end{array}\right)\right|\\
+ & =1\cdot\left|\left(-2\right)\right|\\
+ & =-2
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+Mängel in der Nachvollziehbarkeit in technischen Berechnungen
+\end_layout
+
+\begin_layout Subsection
+Zahlenwerte nicht dokumentiert
+\begin_inset Formula $\frownie\frownie$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Insbesondere in physikalischen und technischen Rechnungen ist die Nachvollziehba
+rkeit wichtig.
+ Jede Rechnung sollte, nach Möglichkeit, folgende Punkte enthalten:
+\end_layout
+
+\begin_layout Enumerate
+Ansatz (mit Variablen)
+\end_layout
+
+\begin_layout Enumerate
+Umstellen nach der gesuchten Größe oder Lösung des Gleichungssystems (mit
+ Variablen)
+\end_layout
+
+\begin_layout Enumerate
+Einsetzen der Zahlenwerte einschließlich des Aufschreibens dieses Ausdrucks
+\end_layout
+
+\begin_layout Enumerate
+Eingabe in den Taschenrechner und Aufscheiben des Gesamtergebnisses
+\end_layout
+
+\begin_layout Paragraph
+Beispiel für eine korrekte Rechnung
+\end_layout
+
+\begin_layout Standard
+Gesucht ist die Zeit, die für einen Sprung vom 10 m-Brett im Schwimmbad
+ vergeht.
+ Ansatz:
+\begin_inset Formula 
+\[
+s=\frac{1}{2}\,g\,t^{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Umstellen nach der gesuchten Größe:
+\begin_inset Formula 
+\begin{align*}
+s & =\frac{1}{2}\,g\,t^{2}\qquad\biggl|\cdot\frac{2}{g}\\
+\Rightarrow\frac{2\,s}{g} & =t^{2}\qquad\biggl|\leftrightarrow\\
+\Rightarrow t^{2} & =\frac{2\,s}{g}\qquad\biggl|\sqrt{\left(\right)}\\
+\Rightarrow t & =\sqrt{\frac{2\,s}{g}}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Einsetzen der Zahlenwerte inkl.
+ Dokumentation:
+\begin_inset Formula 
+\[
+t=\sqrt{\frac{2\cdot10\,\mathrm{m}}{9,81\,\mathrm{m\,s^{-2}}}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Gesamtergebnis:
+\begin_inset Formula 
+\[
+t=1,428\,\mathrm{s}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Beispiel für eine fehlerhafte Rechnung
+\end_layout
+
+\begin_layout Standard
+Gesucht ist die Zeit, die für einen Sprung vom 10 m-Brett im Schwimmbad
+ vergeht.
+ Ansatz:
+\begin_inset Formula 
+\[
+s=\frac{1}{2}\,g\,t^{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Umstellen nach der gesuchten Größe:
+\begin_inset Formula 
+\begin{align*}
+s & =\frac{1}{2}\,g\,t^{2}\qquad\biggl|\cdot\frac{2}{g}\\
+\Rightarrow\frac{2\,s}{g} & =t^{2}\qquad\biggl|\leftrightarrow\\
+\Rightarrow t^{2} & =\frac{2\,s}{g}\qquad\biggl|\sqrt{\left(\right)}\\
+\Rightarrow t & =\sqrt{\frac{2\,s}{g}}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Gesamtergebnis:
+\begin_inset Formula 
+\[
+t=1,428\,\mathrm{s}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Hier ist zwar das richtige Endergebnis angegeben, es fehlt aber das Einsetzen
+ und Dokumentieren der Zahlenwerte.
+ Dieser Schritt ist wichtig, um die Rechnung nachvollziehen zu können.
+ Falls fehlerhafte Werte den Variablen zugeorndet wurden, ist das nur mit
+ diesem Schritt erkennbar.
+\end_layout
+
+\begin_layout Subsection
+Falsch verwendetet Variablen
+\begin_inset Formula $\frownie\frownie$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Es ist falsch in der Aufgabenstellung angegebene Variablen umzubenennen.
+\end_layout
+
+\begin_layout Paragraph
+Beispiel für korrekt übernomme Variablen
+\end_layout
+
+\begin_layout Standard
+Ein Turmspringer springt von einem Turm der Höhe 
+\begin_inset Formula $h=10\,\mathrm{m}$
+\end_inset
+
+.
+ Berechnen Sie die Fallzeit.
+ Ansatz:
+\begin_inset Formula 
+\[
+h=\frac{1}{2}\,g\,t^{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Beispiel für falsch übernomme Variablen
+\end_layout
+
+\begin_layout Standard
+Ein Turmspringer springt von einem Turm der Höhe 
+\begin_inset Formula $h=10\,\mathrm{m}$
+\end_inset
+
+.
+ Berechnen Sie die Fallzeit.
+ Ansatz:
+\begin_inset Formula 
+\[
+s=\frac{1}{2}\,g\,t^{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Variablen und Zahlenwerten in einer Gleichung
+\begin_inset Formula $\frownie\frownie$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Es sollen in Gleichungen entweder nur Variablen oder nur Zahlenwerte verwendet
+ werden, es sei denn, dass eine Unbekannte berechnet wird.
+\end_layout
+
+\begin_layout Paragraph
+Beispiel für korrekte Rechung
+\end_layout
+
+\begin_layout Standard
+Ein Turmspringer springt von einem Turm der Höhe 
+\begin_inset Formula $h=10\,\mathrm{m}$
+\end_inset
+
+.
+ Die Erdbeschlenigungskonstante ist 
+\begin_inset Formula $g=9,81\,\mathrm{m\,s^{-2}}.$
+\end_inset
+
+ Berechnen Sie die Fallzeit.
+ Ansatz:
+\begin_inset Formula 
+\begin{align*}
+\frac{1}{2}\,g\,t^{2} & =h\qquad\biggl|\cdot\frac{2}{g}\\
+\Rightarrow t^{2} & =\frac{2\,h}{g}\qquad\biggl|\sqrt{\left(\right)}\\
+\Rightarrow t & =\sqrt{\frac{2\,h}{g}}\\
+\Rightarrow t & =\sqrt{\frac{2\cdot10\,\mathrm{m}}{9,81\,\mathrm{m\,s^{-2}}}}\\
+\Rightarrow t & =1,428\,\mathrm{s}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Beispiel für fehlerhafte Rechung
+\end_layout
+
+\begin_layout Standard
+Ein Turmspringer springt von einem Turm der Höhe 
+\begin_inset Formula $h=10\,\mathrm{m}$
+\end_inset
+
+.
+ Die Erdbeschlenigungskonstante ist 
+\begin_inset Formula $g=9,81\,\mathrm{m\,s^{-2}}.$
+\end_inset
+
+ Berechnen Sie die Fallzeit.
+ Ansatz:
+\begin_inset Formula 
+\begin{align*}
+\frac{1}{2}\,g\,t^{2} & =h\qquad\biggl|\cdot\frac{2}{g}\\
+\Rightarrow t^{2} & =\frac{2\,h}{9,81\,\mathrm{m\,s^{-2}}}\qquad\biggl|\sqrt{\left(\right)}\\
+\Rightarrow t & =\sqrt{\frac{2\,h}{9,81\,\mathrm{m\,s^{-2}}}}\\
+\Rightarrow t & =\sqrt{\frac{2\cdot10\,\mathrm{m}}{9,81\,\mathrm{m\,s^{-2}}}}\\
+\Rightarrow t & =1,428\,\mathrm{s}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Fehlerhaft ist hier in der zweiten Zeile 
+\begin_inset Formula $g$
+\end_inset
+
+ durch den Zahlenwert zu ersetzen.
+\end_layout
+
+\end_body
+\end_document
