@@ -8,3 +8,6 @@ Verbesserungen einzupflegen.
 
 Das Dokument ist mit dem Editor LyX [www.lyx.org](www.lyx.org) erstellt und soll damit 
 auch weiter gepflegt werden.
+
+Vorschau:
+![Vorschaubild des Dokumentes](teaser_bild.png)
