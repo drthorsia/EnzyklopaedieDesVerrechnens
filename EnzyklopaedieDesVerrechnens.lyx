@@ -981,6 +981,46 @@ s_{\mathrm{a}} & =\sqrt{\frac{1}{n-1}\,\sum_{k=1}^{n}\left(x_{k}-\overline{x}\ri
 \end_layout
 
 \begin_layout Section
+Unklare Grenzen eines Bruchs
+\begin_inset Formula $\frownie\frownie$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Der Bruchstrich muss länger sein als der Zähler und Länger als der Nenner.
+\end_layout
+
+\begin_layout Standard
+Falsch:
+\begin_inset Formula 
+\[
+y=\frac{4\,x^{3}-5\,x^{2}\mathrlap{\,-\,8\,x+5}}{42}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Richtig:
+\end_layout
+
+\begin_layout Standard
+Falsch:
+\begin_inset Formula 
+\[
+y=\frac{4\,x^{3}-5\,x^{2}-8\,x+5}{42}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
 Nicht ausgeglichene Klammerpaare 
 \begin_inset Formula $\frownie\frownie$
 \end_inset
@@ -991,13 +1031,26 @@ Nicht ausgeglichene Klammerpaare
 \begin_layout Standard
 Klammern müssen immer paarweise gesetzt werden.
  Zu einer öffnenden Klammer gehört immer eine schließende Klammer.
+ Zu einer schließenden Klammer gehört immer eine öffnende Klammer.
 \end_layout
 
 \begin_layout Standard
 Falsch:
 \begin_inset Formula 
 \[
-\left(\left(x-2\right)^{2}+3^{2}\right)=\biggl(x^{2}-4\,x+4+9
+\left(\left(x-2\right)^{2}+3^{2}\right)=\bigl(x^{2}-4\,x+4+9
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Falsch:
+\begin_inset Formula 
+\[
+\left(\left(x-2\right)^{2}+3^{2}\right)=x^{2}-4\,x+4+9\bigr)
 \]
 
 \end_inset
