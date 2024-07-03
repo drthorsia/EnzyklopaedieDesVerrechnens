@@ -900,6 +900,50 @@ a_{k}=\frac{4}{T}\,\int_{t=0}^{T/2}2\,t\,\cos\left(\frac{2\,k\,\pi}{T}\,t\right)
 \end_layout
 
 \begin_layout Section
+Integrand 1 nicht nennen 
+\begin_inset Formula $\frownie$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Die Angabe des Integraden darf nicht fehlen, auch wenn er 
+\begin_inset Quotes eld
+\end_inset
+
+1
+\begin_inset Quotes erd
+\end_inset
+
+ ist.
+ Falsch:
+\begin_inset Formula 
+\[
+A=\int_{0}^{4}\,\mathrm{d}x
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Richtig:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+A=\int_{0}^{4}1\,\mathrm{d}x
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
 Integrationskonstante bei unbestimmten Integralen nicht angeben 
 \begin_inset Formula $\frownie$
 \end_inset
