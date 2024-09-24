@@ -391,14 +391,14 @@ ehler)
 \begin_layout Itemize
 Mittlere Fehler liegen vor, wenn logische Zusammenhänge verfälscht werden.
  (Schließende Klammer vergessen, Bruchstrich zu kurz, Wurzel nicht über
- dem gesamten Radikanten), oder wenn logische Zusammenhänge nicht vollständig
+ dem gesamten Radikanden), oder wenn logische Zusammenhänge nicht vollständig
  erfüllt sind.
  
 \end_layout
 
 \begin_layout Itemize
 Schwerwiegende Fehler liegen vor, wenn Rechenschritte durchgeführt wurden,
- die geltenden Regeln wiedersprechen (Kürzen einzelner Summanden aus Summen).
+ die geltenden Regeln widersprechen (Kürzen einzelner Summanden aus Summen).
 \end_layout
 
 \begin_layout Standard
@@ -998,7 +998,7 @@ Falsch:
 \begin_inset Formula 
 \begin{align*}
 s_{\mathrm{a}} & =\sqrt{\frac{1}{n-1}\,\sum_{k=1}^{n}\left(x_{k}-\overline{x}\right)^{2}}\\
- & =\sqrt{\frac{1}{4-1}\,\bigl(3,4-3,}325\bigr)^{2}+\bigl(3,6-3,325\bigr)^{2}+\bigl(3,2-3,325\bigr)^{2}+\bigl(3,1-3,325\bigr)^{2}\\
+ & =\sqrt{\frac{1}{4-1}\,\bigl(\bigl(3,4-3,}325\bigr)^{2}+\bigl(3,6-3,325\bigr)^{2}+\bigl(3,2-3,325\bigr)^{2}+\bigl(3,1-3,325\bigr)^{2}\bigr)\\
  & =0,221736
 \end{align*}
 
@@ -1015,7 +1015,7 @@ Richtig:
 \begin_inset Formula 
 \begin{align*}
 s_{\mathrm{a}} & =\sqrt{\frac{1}{n-1}\,\sum_{k=1}^{n}\left(x_{k}-\overline{x}\right)^{2}}\\
- & =\sqrt{\frac{1}{4-1}\,\bigl(3,4-3,325\bigr)^{2}+\bigl(3,6-3,325\bigr)^{2}+\bigl(3,2-3,325\bigr)^{2}+\bigl(3,1-3,325\bigr)^{2}}\\
+ & =\sqrt{\frac{1}{4-1}\,\left(\bigl(3,4-3,325\bigr)^{2}+\bigl(3,6-3,325\bigr)^{2}+\bigl(3,2-3,325\bigr)^{2}+\bigl(3,1-3,325\bigr)^{2}\right)}\\
  & =0,221736
 \end{align*}
 
@@ -1050,10 +1050,6 @@ y=\frac{4\,x^{3}-5\,x^{2}\mathrlap{\,-\,8\,x+5}}{42}
 
 \begin_layout Standard
 Richtig:
-\end_layout
-
-\begin_layout Standard
-Falsch:
 \begin_inset Formula 
 \[
 y=\frac{4\,x^{3}-5\,x^{2}-8\,x+5}{42}
@@ -1383,11 +1379,11 @@ Falsches Ausklammern in Bezug auf das Summenzeichen
 Falsch:
 \begin_inset Formula 
 \begin{align*}
- & \frac{\sum_{k=0}^{20}\frac{k}{2}}{\sum_{k=2}^{2}\left(\frac{1}{2}\right)^{k}}\qquad\Biggl|\begin{array}{c}
+x= & \frac{\sum_{k=0}^{20}\frac{k}{2}}{\sum_{k=2}^{2}\left(\frac{1}{2}\right)^{k}}\qquad\Biggl|\begin{array}{c}
 \cdot2\\
 \\
 \end{array}\\
- & =\frac{2\,\sum_{k=0}^{20}k}{\sum_{k=2}^{2}\left(\frac{1}{2}\right)^{k}}
+\Rightarrow x= & \frac{2\,\sum_{k=0}^{20}k}{\sum_{k=2}^{2}\left(\frac{1}{2}\right)^{k}}
 \end{align*}
 
 \end_inset
@@ -1717,7 +1713,7 @@ t=1,428\,\mathrm{s}
 Hier ist zwar das richtige Endergebnis angegeben, es fehlt aber das Einsetzen
  und Dokumentieren der Zahlenwerte.
  Dieser Schritt ist wichtig, um die Rechnung nachvollziehen zu können.
- Falls fehlerhafte Werte den Variablen zugeorndet wurden, ist das nur mit
+ Falls fehlerhafte Werte den Variablen zugeordnet wurden, ist das nur mit
  diesem Schritt erkennbar.
 \end_layout
 
@@ -1734,7 +1730,7 @@ Es ist falsch in der Aufgabenstellung angegebene Variablen umzubenennen.
 \end_layout
 
 \begin_layout Paragraph
-Beispiel für korrekt übernomme Variablen
+Beispiel für korrekt übernommene Variablen
 \end_layout
 
 \begin_layout Standard
@@ -1756,7 +1752,7 @@ h=\frac{1}{2}\,g\,t^{2}
 \end_layout
 
 \begin_layout Paragraph
-Beispiel für falsch übernomme Variablen
+Beispiel für falsch übernommene Variablen
 \end_layout
 
 \begin_layout Standard
@@ -1791,7 +1787,7 @@ Es sollen in Gleichungen entweder nur Variablen oder nur Zahlenwerte verwendet
 \end_layout
 
 \begin_layout Paragraph
-Beispiel für korrekte Rechung
+Beispiel für korrekte Rechnung
 \end_layout
 
 \begin_layout Standard
@@ -1821,7 +1817,7 @@ Ein Turmspringer springt von einem Turm der Höhe
 \end_layout
 
 \begin_layout Paragraph
-Beispiel für fehlerhafte Rechung
+Beispiel für fehlerhafte Rechnung
 \end_layout
 
 \begin_layout Standard
