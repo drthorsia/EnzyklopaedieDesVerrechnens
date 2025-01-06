@@ -1,5 +1,5 @@
-#LyX 2.3 created this file. For more info see http://www.lyx.org/
-\lyxformat 544
+#LyX 2.4 created this file. For more info see https://www.lyx.org/
+\lyxformat 620
 \begin_document
 \begin_header
 \save_transient_properties true
@@ -109,11 +109,11 @@ nach-träg-liche
 \end_preamble
 \options BCOR0mm,table,pointlessnumbers, headings=small, appendixprefix=false, numbers=noenddot, listof=totoc, bibliography=totoc
 \use_default_options false
-\maintain_unincluded_children false
+\maintain_unincluded_children no
 \language ngerman
 \language_package default
 \inputencoding iso8859-1
-\fontencoding global
+\fontencoding auto
 \font_roman "default" "default"
 \font_sans "default" "default"
 \font_typewriter "default" "default"
@@ -121,7 +121,9 @@ nach-träg-liche
 \font_default_family default
 \use_non_tex_fonts false
 \font_sc false
-\font_osf false
+\font_roman_osf false
+\font_sans_osf false
+\font_typewriter_osf false
 \font_sf_scale 100 100
 \font_tt_scale 100 100
 \use_microtype false
@@ -144,7 +146,7 @@ nach-träg-liche
 \pdf_colorlinks false
 \pdf_backref false
 \pdf_pdfusetitle true
-\papersize a4paper
+\papersize a4
 \use_geometry false
 \use_package amsmath 1
 \use_package amssymb 1
@@ -165,76 +167,78 @@ nach-träg-liche
 \suppress_date false
 \justification true
 \use_refstyle 0
+\use_formatted_ref 0
 \use_minted 0
+\use_lineno 0
 \branch modellbildung
 \selected 1
 \filename_suffix 0
-\color #faf0e6
+\color background background
 \end_branch
 \branch vorwort
 \selected 0
 \filename_suffix 0
-\color #faf0e6
+\color background background
 \end_branch
 \branch dank
 \selected 0
 \filename_suffix 0
-\color #faf0e6
+\color background background
 \end_branch
 \branch einleitung
 \selected 1
 \filename_suffix 0
-\color #faf0e6
+\color background background
 \end_branch
 \branch taylortest
 \selected 1
 \filename_suffix 0
-\color #faf0e6
+\color background background
 \end_branch
 \branch beschleunigertypen
 \selected 1
 \filename_suffix 0
-\color #faf0e6
+\color background background
 \end_branch
 \branch ausbreitungsgeschwindigkeit_rechnung
 \selected 0
 \filename_suffix 0
-\color #faf0e6
+\color background background
 \end_branch
 \branch konstante_beschleunigung_am_ende
 \selected 0
 \filename_suffix 0
-\color #faf0e6
+\color background background
 \end_branch
 \branch experimentelleraufbau
 \selected 1
 \filename_suffix 0
-\color #faf0e6
+\color background background
 \end_branch
 \branch regelungskonzept
 \selected 1
 \filename_suffix 0
-\color #faf0e6
+\color background background
 \end_branch
 \branch ergebnis
 \selected 1
 \filename_suffix 0
-\color #faf0e6
+\color background background
 \end_branch
 \branch zusammenfassung
 \selected 1
 \filename_suffix 0
-\color #faf0e6
+\color background background
 \end_branch
 \branch dina5
 \selected 0
 \filename_suffix 0
-\color #faf0e6
+\color background background
 \end_branch
 \branch dina4
 \selected 1
 \filename_suffix 0
-\color #faf0e6
+\color background background
 \end_branch
 \index Stichwortverzeichnis
 \shortcut idx
@@ -251,11 +255,16 @@ nach-träg-liche
 \papercolumns 1
 \papersides 1
 \paperpagestyle default
+\tablestyle default
 \tracking_changes false
 \output_changes false
+\change_bars false
+\postpone_fragile_content false
 \html_math_output 0
 \html_css_as_file 0
 \html_be_strict false
+\docbook_table_output 0
+\docbook_mathml_prefix 1
 \end_header
 
 \begin_body
@@ -272,8 +281,7 @@ Enzyklopädie des Verrechnens
 
 
 \size default
-Auflistung und Klassifizierung verschiedener Rechenfehler in ingenieurwissenscha
-ftlichen Rechnungen
+Auflistung und Klassifizierung verschiedener Rechenfehler in ingenieurwissenschaftlichen Rechnungen
 \end_layout
 
 \begin_layout Author
@@ -322,8 +330,8 @@ status open
 \begin_layout Plain Layout
 
 \size small
-Lizenz: Die LyX-Quelldatei und das resultierende Dokument unterliegt der
- Lizenz 
+Lizenz:
+ Die LyX-Quelldatei und das resultierende Dokument unterliegt der Lizenz 
 \begin_inset Quotes eld
 \end_inset
 
@@ -331,7 +339,9 @@ NAMENSNENNUNG - WEITERGABE UNTER GLEICHEN BEDINGUNGEN 4.0 INTERNATIONAL
 \begin_inset Quotes erd
 \end_inset
 
-, CC-BY-SA 4.0, Verfügbar unter 
+,
+ CC-BY-SA 4.0,
+ Verfügbar unter 
 \family typewriter
 https://creativecommons.org/licenses/by-sa/4.0/
 \family default
@@ -371,7 +381,8 @@ Dies ist eine Auflistung von Fehlern aus dem Bereich der Ingenieurmathematik.
 \begin_inset Formula $\frownie$
 \end_inset
 
- (leichter Flüchtigkeitsfehler), 
+ (leichter Flüchtigkeitsfehler),
+ 
 \begin_inset Formula $\frownie\frownie$
 \end_inset
 
@@ -384,20 +395,23 @@ Dies ist eine Auflistung von Fehlern aus dem Bereich der Ingenieurmathematik.
 \end_layout
 
 \begin_layout Itemize
-Leichte Fehler sind Flüchtigkeitsfehler (Addition einmalig falsch, Übertragungsf
-ehler)
+Leichte Fehler sind Flüchtigkeitsfehler (Addition einmalig falsch,
+ Übertragungsfehler)
 \end_layout
 
 \begin_layout Itemize
-Mittlere Fehler liegen vor, wenn logische Zusammenhänge verfälscht werden.
- (Schließende Klammer vergessen, Bruchstrich zu kurz, Wurzel nicht über
- dem gesamten Radikanden), oder wenn logische Zusammenhänge nicht vollständig
- erfüllt sind.
+Mittlere Fehler liegen vor,
+ wenn logische Zusammenhänge verfälscht werden.
+ (Schließende Klammer vergessen,
+ Bruchstrich zu kurz,
+ Wurzel nicht über dem gesamten Radikanden),
+ oder wenn logische Zusammenhänge nicht vollständig erfüllt sind.
  
 \end_layout
 
 \begin_layout Itemize
-Schwerwiegende Fehler liegen vor, wenn Rechenschritte durchgeführt wurden,
+Schwerwiegende Fehler liegen vor,
+ wenn Rechenschritte durchgeführt wurden,
  die geltenden Regeln widersprechen (Kürzen einzelner Summanden aus Summen).
 \end_layout
 
@@ -426,7 +440,8 @@ Fehler
 \end_layout
 
 \begin_layout Section
-Falsches Zeichen, Übertragungsfehler 
+Falsches Zeichen,
+ Übertragungsfehler 
 \begin_inset Formula $\frownie$
 \end_inset
 
@@ -434,13 +449,14 @@ Falsches Zeichen, Übertragungsfehler
 \end_layout
 
 \begin_layout Standard
-Es ist ein Fehler, wenn ein Term fehlerhaft abgeschrieben wird.
+Es ist ein Fehler,
+ wenn ein Term fehlerhaft abgeschrieben wird.
  
 \end_layout
 
 \begin_layout Standard
-Falsch (im Zähler der linken Seite steht ein Multiplikationszeichen, statt
- einem Pluszeichen):
+Falsch (im Zähler der linken Seite steht ein Multiplikationszeichen,
+ statt einem Pluszeichen):
 \end_layout
 
 \begin_layout Standard
@@ -482,10 +498,11 @@ Gleicheitszeichen oder Folgepfeile fehlen
 \end_layout
 
 \begin_layout Standard
-Bei Umformungen, bei denen sich der Wert des Ausdrucks nicht ändert, muss
- ein Gleichheitszeichen gesetzt werden.
- Wenn bei Termumformungen sich der Wert einer Gleichung ändert, muss ein
- 
+Bei Umformungen,
+ bei denen sich der Wert des Ausdrucks nicht ändert,
+ muss ein Gleichheitszeichen gesetzt werden.
+ Wenn bei Termumformungen sich der Wert einer Gleichung ändert,
+ muss ein 
 \begin_inset Formula $\Rightarrow$
 \end_inset
 
@@ -564,8 +581,8 @@ Gleicheitszeichen oder Folgepfeile falsch verwendet
 \end_layout
 
 \begin_layout Standard
-Falsch ist es, wenn aus einem Ausdruck ein anderer folgt und dies mit einem
- Gleichheitszeichen gekennzeichnet wird.
+Falsch ist es,
+ wenn aus einem Ausdruck ein anderer folgt und dies mit einem Gleichheitszeichen gekennzeichnet wird.
 \end_layout
 
 \begin_layout Paragraph
@@ -659,8 +676,8 @@ Weiteres Beispiel:
 \end_layout
 
 \begin_layout Standard
-Es ist folgender Ausdruck gegeben, bei dem durch einen Koeffizientenvergleich
- ein Gleichungssystem abgeleitet wird:
+Es ist folgender Ausdruck gegeben,
+ bei dem durch einen Koeffizientenvergleich ein Gleichungssystem abgeleitet wird:
 \begin_inset Formula 
 \[
 -6\,a_{2}\,t^{2}+\left(-2\,a_{2}-6\,a_{1}\right)\,t+2\,a_{2}+a_{1}-6\,a_{0}=4\,t^{2}+0\,t-3
@@ -702,11 +719,13 @@ Es ist folgender Ausdruck gegeben, bei dem durch einen Koeffizientenvergleich
 \end_layout
 
 \begin_layout Standard
-Dies ist falsch, weil aus 
+Dies ist falsch,
+ weil aus 
 \begin_inset Formula $2\,a_{2}+a_{1}-6\,a_{0}=-3$
 \end_inset
 
- nicht folgt, dass 
+ nicht folgt,
+ dass 
 \begin_inset Formula $-6\,a_{2}=4$
 \end_inset
 
@@ -773,8 +792,8 @@ und
 \end_layout
 
 \begin_layout Standard
-Noch besser übersichtlicher wäre es, ein lineares Gleichungssystem direkt
- abzuleiten:
+Noch besser übersichtlicher wäre es,
+ ein lineares Gleichungssystem direkt abzuleiten:
 \end_layout
 
 \begin_layout Standard
@@ -813,8 +832,7 @@ Weiteres Beispiel
 \end_layout
 
 \begin_layout Standard
-In diesem Beispiel werden Gleichheitszeichen verwendet um eine Nebenrechnung
- zu kennzeichnen.
+In diesem Beispiel werden Gleichheitszeichen verwendet um eine Nebenrechnung zu kennzeichnen.
  Falsch ist:
 \begin_inset Formula 
 \[
@@ -908,7 +926,8 @@ Integrand 1 nicht nennen
 \end_layout
 
 \begin_layout Standard
-Die Angabe des Integraden darf nicht fehlen, auch wenn er 
+Die Angabe des Integraden darf nicht fehlen,
+ auch wenn er 
 \begin_inset Quotes eld
 \end_inset
 
@@ -978,6 +997,64 @@ Richtig:
 \end_inset
 
 
+\end_layout
+
+\begin_layout Section
+Gemischte Brüche verwenden 
+\begin_inset Formula $\frownie$
+\end_inset
+
+
+\begin_inset Formula $\frownie$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Gemischte Brüche sollen nicht in wissenschaftlichen Rechnungen verwendet werden.
+ Falsch:
+\begin_inset Formula 
+\[
+3\,\frac{1}{2}=3,5
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Richtig:
+\begin_inset Formula 
+\[
+3\,\frac{1}{2}=1,5
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Begründung:
+ Wenn 
+\begin_inset Formula $3+\frac{1}{2}$
+\end_inset
+
+ gemeint ist,
+ darf dafür nicht 
+\begin_inset Formula $3\,\frac{1}{2}$
+\end_inset
+
+ aufgeschrieben werden.
+ Dies ist doppeldeutig mit 
+\begin_inset Formula $3\cdot\frac{1}{2}$
+\end_inset
+
+.
+ Gemischte Brüche weden im Alltag gelegentlich verwendet,
+ dürfen aber aufgrund der doppeldeutbarkeit in Wissenschaft und Technik nicht verwendet werden.
 \end_layout
 
 \begin_layout Section
@@ -1114,7 +1191,8 @@ Richtig:
 \end_layout
 
 \begin_layout Standard
-Ausnahme: Intervalle.
+Ausnahme:
+ Intervalle.
  
 \begin_inset Formula $L=(-4;\,7]$
 \end_inset
@@ -1135,8 +1213,8 @@ Die
 \begin_inset Formula $n$
 \end_inset
 
--te Ableitung kann dadurch gekennzeichnet werden, dass im Exponenten nach
- dem Funktionsnamen eine natürliche Zahl in Klammern steht.
+-te Ableitung kann dadurch gekennzeichnet werden,
+ dass im Exponenten nach dem Funktionsnamen eine natürliche Zahl in Klammern steht.
  
 \end_layout
 
@@ -1192,7 +1270,8 @@ Kennzeichnung von Ableitungen
 \end_layout
 
 \begin_layout Standard
-Die erste Ableitung kann dadurch gekennzeichnet werden, indem ein 
+Die erste Ableitung kann dadurch gekennzeichnet werden,
+ indem ein 
 \begin_inset Formula $\frac{\mathrm{d}}{\mathrm{d}t}$
 \end_inset
 
@@ -1253,8 +1332,7 @@ Richtig (
 \begin_inset Formula $\frac{k\,2}{6}$
 \end_inset
 
- kann nicht aus dem Argument der Kosinusfunktion vor die Funktion geschrieben
- werden) :
+ kann nicht aus dem Argument der Kosinusfunktion vor die Funktion geschrieben werden) :
 \end_layout
 
 \begin_layout Standard
@@ -1316,7 +1394,8 @@ Falsch:
 \end_layout
 
 \begin_layout Standard
-Richtig: In diesem Ausdruck kann nichts gekürzt werden.
+Richtig:
+ In diesem Ausdruck kann nichts gekürzt werden.
  Möglich ist allerdings folgende Umformung:
 \begin_inset Formula 
 \begin{align*}
@@ -1381,8 +1460,7 @@ Falsch:
 \begin{align*}
 x= & \frac{\sum_{k=0}^{20}\frac{k}{2}}{\sum_{k=2}^{2}\left(\frac{1}{2}\right)^{k}}\qquad\Biggl|\begin{array}{c}
 \cdot2\\
-\\
-\end{array}\\
+\\\end{array}\\
 \Rightarrow x= & \frac{2\,\sum_{k=0}^{20}k}{\sum_{k=2}^{2}\left(\frac{1}{2}\right)^{k}}
 \end{align*}
 
@@ -1408,7 +1486,8 @@ Richtig:
 \end_layout
 
 \begin_layout Section
-Summenzeichen: die Laufvariable ausklammern 
+Summenzeichen:
+ die Laufvariable ausklammern 
 \begin_inset Formula $\frownie\frownie\frownie$
 \end_inset
 
@@ -1416,9 +1495,9 @@ Summenzeichen: die Laufvariable ausklammern
 \end_layout
 
 \begin_layout Standard
-Die Laufvariable des Summenzeichens existiert nur dort und kann nicht ausgeklamm
-ert werden.
- Falsch ist (Hinweis: es gilt 
+Die Laufvariable des Summenzeichens existiert nur dort und kann nicht ausgeklammert werden.
+ Falsch ist (Hinweis:
+ es gilt 
 \begin_inset Formula $\sum_{k=0}^{n}k=\frac{n^{2}+n}{2}$
 \end_inset
 
@@ -1457,7 +1536,8 @@ Falsches Ausmultiplizieren
 \end_layout
 
 \begin_layout Standard
-Falsch: Das Vorzeichen des einen Faktors ignorieren
+Falsch:
+ Das Vorzeichen des einen Faktors ignorieren
 \end_layout
 
 \begin_layout Standard
@@ -1497,8 +1577,8 @@ Determinantenstriche vergessen
 \end_layout
 
 \begin_layout Standard
-Determinanten verändern ihren Wert nicht, wenn Zeilen mit Konstanten multiplizie
-rt und zu anderen Zeilen addiert werden.
+Determinanten verändern ihren Wert nicht,
+ wenn Zeilen mit Konstanten multipliziert und zu anderen Zeilen addiert werden.
  Dasselbe gilt für Spalten.
  Dies wird 
 \begin_inset Quotes eld
@@ -1584,9 +1664,10 @@ Zahlenwerte nicht dokumentiert
 \end_layout
 
 \begin_layout Standard
-Insbesondere in physikalischen und technischen Rechnungen ist die Nachvollziehba
-rkeit wichtig.
- Jede Rechnung sollte, nach Möglichkeit, folgende Punkte enthalten:
+Insbesondere in physikalischen und technischen Rechnungen ist die Nachvollziehbarkeit wichtig.
+ Jede Rechnung sollte,
+ nach Möglichkeit,
+ folgende Punkte enthalten:
 \end_layout
 
 \begin_layout Enumerate
@@ -1594,8 +1675,7 @@ Ansatz (mit Variablen)
 \end_layout
 
 \begin_layout Enumerate
-Umstellen nach der gesuchten Größe oder Lösung des Gleichungssystems (mit
- Variablen)
+Umstellen nach der gesuchten Größe oder Lösung des Gleichungssystems (mit Variablen)
 \end_layout
 
 \begin_layout Enumerate
@@ -1611,8 +1691,8 @@ Beispiel für eine korrekte Rechnung
 \end_layout
 
 \begin_layout Standard
-Gesucht ist die Zeit, die für einen Sprung vom 10 m-Brett im Schwimmbad
- vergeht.
+Gesucht ist die Zeit,
+ die für einen Sprung vom 10 m-Brett im Schwimmbad vergeht.
  Ansatz:
 \begin_inset Formula 
 \[
@@ -1669,8 +1749,8 @@ Beispiel für eine fehlerhafte Rechnung
 \end_layout
 
 \begin_layout Standard
-Gesucht ist die Zeit, die für einen Sprung vom 10 m-Brett im Schwimmbad
- vergeht.
+Gesucht ist die Zeit,
+ die für einen Sprung vom 10 m-Brett im Schwimmbad vergeht.
  Ansatz:
 \begin_inset Formula 
 \[
@@ -1710,11 +1790,12 @@ t=1,428\,\mathrm{s}
 \end_layout
 
 \begin_layout Standard
-Hier ist zwar das richtige Endergebnis angegeben, es fehlt aber das Einsetzen
- und Dokumentieren der Zahlenwerte.
- Dieser Schritt ist wichtig, um die Rechnung nachvollziehen zu können.
- Falls fehlerhafte Werte den Variablen zugeordnet wurden, ist das nur mit
- diesem Schritt erkennbar.
+Hier ist zwar das richtige Endergebnis angegeben,
+ es fehlt aber das Einsetzen und Dokumentieren der Zahlenwerte.
+ Dieser Schritt ist wichtig,
+ um die Rechnung nachvollziehen zu können.
+ Falls fehlerhafte Werte den Variablen zugeordnet wurden,
+ ist das nur mit diesem Schritt erkennbar.
 \end_layout
 
 \begin_layout Subsection
@@ -1782,8 +1863,9 @@ Variablen und Zahlenwerten in einer Gleichung
 \end_layout
 
 \begin_layout Standard
-Es sollen in Gleichungen entweder nur Variablen oder nur Zahlenwerte verwendet
- werden, es sei denn, dass eine Unbekannte berechnet wird.
+Es sollen in Gleichungen entweder nur Variablen oder nur Zahlenwerte verwendet werden,
+ es sei denn,
+ dass eine Unbekannte berechnet wird.
 \end_layout
 
 \begin_layout Paragraph
