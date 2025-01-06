@@ -51,7 +51,7 @@
 
 %\usepackage{mathrsfs}
 %\usepackage{mathpazo}
-\usepackage[notextcomp]{stix}
+%\usepackage[notextcomp]{stix}
 
 \restylefloat{table} %erforderlich um tabellen wie figuren numerieren zu lassen
 \mathcode`,="013B %Komma ist Dezimaltrennzeichen in mat. Formeln
@@ -112,7 +112,7 @@ nach-träg-liche
 \maintain_unincluded_children no
 \language ngerman
 \language_package default
-\inputencoding iso8859-1
+\inputencoding utf8
 \fontencoding auto
 \font_roman "default" "default"
 \font_sans "default" "default"
@@ -134,6 +134,7 @@ nach-träg-liche
 \bibtex_command default
 \index_command default
 \float_placement tbh
+\float_alignment class
 \paperfontsize 12
 \spacing single
 \use_hyperref true
@@ -1054,7 +1055,7 @@ Begründung:
 
 .
  Gemischte Brüche weden im Alltag gelegentlich verwendet,
- dürfen aber aufgrund der doppeldeutbarkeit in Wissenschaft und Technik nicht verwendet werden.
+ dürfen aber aufgrund der Doppeldeutigkeit in Wissenschaft und Technik nicht verwendet werden.
 \end_layout
 
 \begin_layout Section
