@@ -1656,7 +1656,7 @@ Richtig:
 Mängel in der Nachvollziehbarkeit in technischen Berechnungen
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Section
 Zahlenwerte nicht dokumentiert
 \begin_inset Formula $\frownie\frownie$
 \end_inset
@@ -1687,7 +1687,7 @@ Einsetzen der Zahlenwerte einschließlich des Aufschreibens dieses Ausdrucks
 Eingabe in den Taschenrechner und Aufscheiben des Gesamtergebnisses
 \end_layout
 
-\begin_layout Paragraph
+\begin_layout Subsubsection
 Beispiel für eine korrekte Rechnung
 \end_layout
 
@@ -1745,7 +1745,7 @@ t=1,428\,\mathrm{s}
 
 \end_layout
 
-\begin_layout Paragraph
+\begin_layout Subsubsection
 Beispiel für eine fehlerhafte Rechnung
 \end_layout
 
@@ -1799,7 +1799,7 @@ Hier ist zwar das richtige Endergebnis angegeben,
  ist das nur mit diesem Schritt erkennbar.
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Section
 Falsch verwendetet Variablen
 \begin_inset Formula $\frownie\frownie$
 \end_inset
@@ -1811,7 +1811,7 @@ Falsch verwendetet Variablen
 Es ist falsch in der Aufgabenstellung angegebene Variablen umzubenennen.
 \end_layout
 
-\begin_layout Paragraph
+\begin_layout Subsubsection
 Beispiel für korrekt übernommene Variablen
 \end_layout
 
@@ -1833,7 +1833,7 @@ h=\frac{1}{2}\,g\,t^{2}
 
 \end_layout
 
-\begin_layout Paragraph
+\begin_layout Subsubsection
 Beispiel für falsch übernommene Variablen
 \end_layout
 
@@ -1855,7 +1855,7 @@ s=\frac{1}{2}\,g\,t^{2}
 
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Section
 Variablen und Zahlenwerten in einer Gleichung
 \begin_inset Formula $\frownie\frownie$
 \end_inset
@@ -1869,7 +1869,7 @@ Es sollen in Gleichungen entweder nur Variablen oder nur Zahlenwerte verwendet w
  dass eine Unbekannte berechnet wird.
 \end_layout
 
-\begin_layout Paragraph
+\begin_layout Subsubsection
 Beispiel für korrekte Rechnung
 \end_layout
 
@@ -1899,7 +1899,7 @@ Ein Turmspringer springt von einem Turm der Höhe
 
 \end_layout
 
-\begin_layout Paragraph
+\begin_layout Subsubsection
 Beispiel für fehlerhafte Rechnung
 \end_layout
 
